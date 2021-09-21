@@ -6,6 +6,7 @@ node {
     def mvn = tool 'Maven3';
     withSonarQubeEnv() {
       sh "${mvn}/bin/mvn sonar:sonar"
+	    {
       -D sonar.projectVersion=1.0-SNAPSHOT \
       -D sonar.login=admin \
       -D sonar.password=admin12345 \
@@ -18,4 +19,5 @@ node {
       -D sonar.host.url=http://localhost:9000
     }
   }
+}
 }
