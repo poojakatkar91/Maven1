@@ -8,7 +8,7 @@ node {
       sh "${mvn}/bin/mvn sonar:sonar"
       -D sonar.projectVersion=1.0-SNAPSHOT \
       -D sonar.login=admin \
-      -D sonar.password=admin \
+      -D sonar.password=admin12345 \
       -D sonar.projectBaseDir=/var/lib/jenkins/workspace/jenkins-sonar/ \
       -D sonar.projectKey=Maven1 \
       -D sonar.sourceEncoding=UTF-8 \
