@@ -4,7 +4,7 @@ node {
   }
   stage('SonarQube Analysis') {
     def mvn = tool 'Maven3';
-    withSonarQubeEnv() {
+    withSonarQubeEnv('SonarQube') {
       sh "${mvn}/bin/mvn sonar:sonar
       -D sonar.projectVersion=1.0-SNAPSHOT \
       -D sonar.login=admin \
