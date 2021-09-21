@@ -14,7 +14,7 @@ node {
       -D sonar.sourceEncoding=UTF-8 \
       -D sonar.language=java \
       -D sonar.sources=Maven1/src/main/java/com/affy \
-      -D sonar.host.url=http://localhost:9000
+      -D sonar.host.url=http://localhost:9000"""
     }
   } 
 }
