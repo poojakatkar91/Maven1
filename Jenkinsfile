@@ -10,10 +10,10 @@ node {
       -D sonar.login=admin \
       -D sonar.password=admin12345 \
       -D sonar.projectBaseDir=C:/Users/DeviL/IdeaProjects/SimpleMavenProject-master \
-      -D sonar.projectKey=Maven1 \
+      -D sonar.projectKey=SimpleMavenProject-master \
       -D sonar.sourceEncoding=UTF-8 \
       -D sonar.language=java \
-      -D sonar.sources=Maven1/src/main/java/com/affy \
+      -D sonar.sources=SimpleMavenProject-master/src/main/java/com/affy \
       -D sonar.host.url=http://localhost:9000"""
     }
   } 
