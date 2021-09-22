@@ -5,7 +5,7 @@ node {
   stage('SonarQube Analysis') {
       def mvn = tool 'Maven3';
       withSonarQubeEnv('SonarQube') {
-       bat """/var/lib/jenkins/tools/hudson.plugins.sonar.SonarRunnerInstallation/SonarQube/bin/sonar-scanner \
+       bat """C:/sonar-scanner-4.6.2.2472-windows/bin/sonar-scanner \
       -D sonar.projectVersion=1.0-SNAPSHOT \
       -D sonar.login=admin \
       -D sonar.password=admin12345 \
